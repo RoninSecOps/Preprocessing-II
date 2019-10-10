@@ -20,3 +20,10 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+.flexCustom(@display, @flexFlow, @justifyContent, @flexWrap:nowrap) {
+  display: @display;
+  flex-flow: @flexFlow;
+  justify-content: @justifyContent;
+  flex-wrap: @flexWrap;
+}
