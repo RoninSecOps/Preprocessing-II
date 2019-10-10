@@ -8,15 +8,10 @@
     border-bottom: 2px dashed @navigation-border;
     margin-bottom: 5%;
     @media @phone {
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      flex-wrap: wrap;
+      .displayFlex();
     }
     .welcome-cont {
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
+      .displayFlex();
       @media @phone {
       }
     }
@@ -28,10 +23,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     @media @phone {
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      flex-wrap: wrap;
+      .displayFlex();
     }
 
     .text-content {
@@ -48,7 +40,7 @@
       @media @phone {
         width: 100%;
         text-align: center;
-        padding-left: 3%
+        padding-left: 3%;
       }
       img {
         border-radius: 10px;
