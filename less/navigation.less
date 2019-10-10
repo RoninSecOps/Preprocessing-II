@@ -1,1 +1,47 @@
 // Navigation Styles here
+.dashed-top {
+  width: 100%;
+  border-top: 2px dashed silver;
+}
+nav {
+  max-width: 800px;
+  width: 90%;
+  margin: 2% auto;
+  display: flex;
+  @media @phone {
+    flex-flow: column;
+  }
+  .h1-cnt {
+    display: flex;
+    width: 40%;
+
+    @media @phone {
+      width: 100%;
+      justify-content: center;
+    }
+    h1 {
+      align-items: center;
+    }
+  }
+  .navBar {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    align-items: center;
+    @media @phone {
+      width: 100%;
+      margin-top: 2%;
+    }
+
+    li {
+      text-align: right;
+
+      a {
+        font-size: 1.6rem;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+      }
+    }
+  }
+}
