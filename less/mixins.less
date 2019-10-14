@@ -1,1 +1,29 @@
 // Mixins in here
+.custom-btn(@background, @color) {
+  background: @background;
+  font-size: 2.2rem;
+  color: @color;
+  text-align: center;
+  border-radius: 15px;
+  padding: 4%;
+  width: 80%;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    background: darken(@background, 10%);
+  }
+}
+
+.displayFlex() {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.flexCustom(@display, @flexFlow, @justifyContent, @flexWrap:nowrap) {
+  display: @display;
+  flex-flow: @flexFlow;
+  justify-content: @justifyContent;
+  flex-wrap: @flexWrap;
+}
